@@ -1,0 +1,198 @@
+/* body {
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+}
+
+#app canvas {
+  outline: none;
+}
+
+#debug {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  width: 350px;
+  z-index: 10;
+} */
+
+:root {
+  --main-bg-color: rgb(232, 232, 227);
+  --nav-color: black;
+  --column-direction: column;
+}
+
+
+@font-face {
+  font-family: "Chillax";
+  src: url('fonts/Chillax-Variable.ttf');
+  /* Autres formats de police (woff, woff2, etc.) peuvent être ajoutés ici */
+}
+@font-face {
+  font-family: "Clash";
+  src: url('fonts/ClashDisplay-Variable.ttf');
+  /* Autres formats de police (woff, woff2, etc.) peuvent être ajoutés ici */
+}
+@font-face {
+  font-family: "Overusedgrotesk";
+  src: url('fonts/ttf/OverusedGrotesk-ExtraBold.ttf');
+  /* Autres formats de police (woff, woff2, etc.) peuvent être ajoutés ici */
+}
+
+@font-face {
+  font-family: "OverusedgroteskM";
+  src: url('fonts/ttf/OverusedGrotesk-Medium.ttf');
+  /* Autres formats de police (woff, woff2, etc.) peuvent être ajoutés ici */
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  display: flex; 
+  width: 100%;
+  height: 100vh;
+  flex-direction: var(--column-direction);
+  /* background-color: rgb(232, 232, 227); */
+  
+}
+
+#main{
+  width: 100%;
+  height: 100vh;
+}
+
+nav {
+  margin: 0;
+  display: flex;
+  position: fixeds;
+  color: var(--nav-color);
+  padding: 20px;
+  text-align: justify;
+  justify-content: flex-end;
+}
+
+.logo {
+  margin: 0;
+  display: flex;
+  flex : 1;
+  color: #524D47;
+  font-size: 100px;
+  padding: 20px;
+  text-align: justify;
+  flex-direction: var(--column-direction);
+  font-family: "Overusedgrotesk";
+  gap: 6px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  float: right;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #6B645C;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Clash";
+
+}
+
+nav ul li a:hover {
+  color: white; /* Change color on hover */
+}
+
+.container {
+  display : flex;
+  text-align: justify;
+  width: 100%;
+  height: 100vh;
+  flex-direction: var(--column-direction);
+  background-image: url("/static/img/pattern3.png");
+  background-repeat: repeat;
+  /* background-color: var(--main-bg-color); */
+}
+
+.link1{
+  display: flex;
+  transition-property: all;
+  transition-duration: .8s;
+  transition-timing-function:cubic-bezier(0.16, 1, 0.3, 1)
+}
+
+
+
+.link2{
+  position: absolute;
+  transition-property: all;
+  transition-duration: .8s;
+  transition-timing-function:cubic-bezier(0.16, 1, 0.3, 1)
+
+}
+
+h1{
+  font-size: 3rem;
+}
+h5{
+  font-size: 1rem;
+}
+h3{
+  font-size: 2.5rem;
+}
+
+#canvas {
+  border: solid 1px blue;
+	padding: 8px;
+	margin: 0 auto;
+	width: 400px;
+	height: 300px;
+}
+.container2{
+  display: flex;
+  text-align: justify;
+  flex-direction: var(--column-direction);
+  width: 100%;
+  height: 100vh;
+  background-image: url("/static/img/pattern4.png");
+}
+
+.canvas{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+  bottom: 10%
+
+}
+
+.h1{
+  font-family:"OverusedgroteskM" ;
+  margin: 0;
+}
+
+.p{
+  margin: 0;
+}
+
+video {
+  margin-top: 20px;
+  cursor: pointer;
+}
