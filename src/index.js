@@ -40,9 +40,6 @@ container.appendChild( renderer.domElement );
 
 
 
-
-
-
 const geometry = new THREE.BoxGeometry( 3, 3, 3 );
 const material = new THREE.MeshBasicMaterial( { color: 0xff65d7 } );
 const cube = new THREE.Mesh( geometry, material );
