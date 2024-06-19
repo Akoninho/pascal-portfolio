@@ -120,8 +120,11 @@ nav ul li a:hover {
 .container {
   display : flex;
   text-align: justify;
-  width: 100%;
+  /* width: 100%; */
   height: 100vh;
+  position: sticky;
+  /* top: 0; */
+  z-index: 1;
   flex-direction: var(--column-direction);
   background-image: url("/static/img/pattern3.png");
   background-repeat: repeat;
@@ -155,20 +158,23 @@ h3{
   font-size: 2.5rem;
 }
 
-#canvas {
+/* #canvas {
   border: solid 1px blue;
 	padding: 8px;
 	margin: 0 auto;
 	width: 400px;
 	height: 300px;
-}
+} */
 .container2{
   display: flex;
   text-align: justify;
   flex-direction: var(--column-direction);
   width: 100%;
   height: 100vh;
-  background-image: url("/static/img/pattern4.png");
+  z-index: 2;
+  /* margin-top: -50vh; */
+  background-color: black;
+  border-radius: 25px;
 }
 
 .canvas{
@@ -176,23 +182,87 @@ h3{
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
-  margin: 0;
   text-align: center;
-  bottom: 10%
+  bottom: 10%;
+  margin-top: 75px;
 
 }
 
-.h1{
+/* .h1{
   font-family:"OverusedgroteskM" ;
   margin: 0;
-}
+} */
 
 .p{
   margin: 0;
 }
 
-video {
-  margin-top: 20px;
-  cursor: pointer;
+#image {
+  display: block;
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  height: 200px;
+  border-radius: 25px;
+
+}
+
+.article{
+  background-color: rgba(47, 46, 46, 0.514);
+  border-radius: 15px;
+  max-width: 500px;
+  min-width: 400px;
+  overflow: hidden;
+}
+
+.articleCase{
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 75px;
+  margin: 5px 15px;
+  width: 500px;
+  margin-left: 50px;
+}
+
+.articleText{
+  font-size: 2rem;
+  margin-left: 15px;
+  margin-right: 10px;
+  text-align: center;
+  color: rgb(209, 209, 199);
+  margin-top: 25px;
+}
+.boutonBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.boutonArticle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(248, 248, 248, 0.911);
+  border-radius: 15px;
+  align-self: center;
+  width: 200px;
+  height: 60px;
+}
+
+.title{
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  color: rgb(209, 209, 199);
+  font-size: 5em;
+  font-family: "Overusedgrotesk" ;
+  text-wrap: balance;
+  line-height: 83%;
+  letter-spacing: -.025em;
+  margin-top: 25px;
+  margin-bottom: 75px;
+
+
 }
