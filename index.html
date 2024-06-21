@@ -8,6 +8,28 @@
   <link rel="stylesheet" href="./src/d1ce22d90a5a7b82.css">
   <link rel="stylesheet" href="./src/scroll.scss">
   <link rel="stylesheet" href="./src/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="scripts/jquery.waypoints.min.js"></script>
+  <script type="module" src="./src/cursor.js"></script>
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+  <script>
+    const lenis = new Lenis({
+      duration: 1.2,
+      easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
+      direction: "vertical",
+      gestureDirection: "vertical",
+      smooth: true,
+      smoothTouch: false,
+      touchMultiplier: 2,
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+  </script>
   <script src="./bootstrap-5.0.2-dist/js/bootstrap.js"></script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.165.0/three.module.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.165.0/three.module.min.js"></script>
@@ -27,10 +49,12 @@
 
 <body>
   <div id="main">
+    <div class="circle"></div>
+    <div class="circleView"></div>
     <div class="container">
       <nav>
         <div class="logo">
-          <h1>Pascal</h1>
+          <h1>Pascal.</h1>
           <h5>Portfolio</h5>
         </div>
         <ul>
@@ -48,47 +72,123 @@
 
       <div class="canvas">
 
-        <h1>Je me nomme Pascal DZAMA</h1>
+        <div class="presentation">
+          <div class="statut">
+            <h2>ETUDIANT BTS SIO / WEB DEV</h2>
+          </div>
+          <div class="nom">
+            <p>PASCAL DZAMA</p><sup class="asterix">(*)</sup>
+          </div>
 
-        <p>
-          Étudiant en deuxième année de BTS SIO, passionné d'informatique.
-        </p>
+        </div>
+
 
       </div>
 
     </div>
 
     <div class="container2">
-      
+
       <div class="title">
-        
-        <h1>Mes Projets</h1>
-      
+
+        <h1>MES PROJETS</h1>
+
+      </div>
+      <div class="image-slider">
+        <div class="gauche">
+          <div id="counter">
+            <div
+              class="sticky top-0  col-span-5 hidden h-fit w-full overflow-hidden text-[22vw] font-normal leading-[0.8] text-secondary-50 md:flex">
+              <span class="relative">0</span>
+              <div id="increment-number" class="relative">1</div>
+            </div>
+          </div>
+        </div>
+        <div class="droite">
+
+          <div class="imgProjet" target="_blank">
+            <img id="image" src="./img/adidas.webp"></img>
+            <div class="flex flex-col gap-y-1">
+            </br>
+            <h3 class="w-fit text-h5 font-semibold text-accent-300 md:text-h4 2xl:text-h3">
+              Padidas
+            </h3>
+          </div>
+          </br>
+          <div class="flex items-end text-sm font-medium uppercase tracking-base text-secondary-50 2xl:text-base" >
+            <span class="flex h-fit items-center justify-center gap-x-2" >
+              <span class="rounded-full border border-secondary-50 px-3 py-0 sm:py-1">
+                Padidas
+              </span>
+              <span class="rounded-full border border-secondary-50 px-3 py-0 sm:py-1">
+                Developpement
+              </span>
+            </span>
+            <span class="ml-2 flex h-fit items-center justify-center rounded-full border border-secondary-50 bg-secondary-50 px-3 py-0 text-secondary-400 sm:py-1" >
+              2024
+            </span>
+          </div>
+          </div>
+          <div class="imgBasket">
+            <img id="image" src="./img/basketball.webp"></img>
+            <div class="flex flex-col gap-y-1">
+              </br>
+              <h3 class="w-fit text-h5 font-semibold text-accent-300 md:text-h4 2xl:text-h3">
+                BasketClub
+              </h3>
+            </div>
+            </br>
+            <div class="flex items-end text-sm font-medium uppercase tracking-base text-secondary-50 2xl:text-base" >
+              <span class="flex h-fit items-center justify-center gap-x-2" >
+                <span class="rounded-full border border-secondary-50 px-3 py-0 sm:py-1">
+                  Basket
+                </span>
+                <span class="rounded-full border border-secondary-50 px-3 py-0 sm:py-1">
+                  Developpement
+                </span>
+              </span>
+              <span class="ml-2 flex h-fit items-center justify-center rounded-full border border-secondary-50 bg-secondary-50 px-3 py-0 text-secondary-400 sm:py-1" >
+                2024
+              </span>
+            </div>
+          </div>
+          <div class="imgFootball" style="padding-bottom: 100px;">
+            <img id="image" src="./img/football.webp"></img>
+            <div class="flex flex-col gap-y-1">
+            </br>
+            <h3 class="w-fit text-h5 font-semibold text-accent-300 md:text-h4 2xl:text-h3">
+              FootClub
+            </h3>
+          </div>
+          </br>
+          <div class="flex items-end text-sm font-medium uppercase tracking-base text-secondary-50 2xl:text-base" >
+            <span class="flex h-fit items-center justify-center gap-x-2" >
+              <span class="rounded-full border border-secondary-50 px-3 py-0 sm:py-1">
+                Foot
+              </span>
+              <span class="rounded-full border border-secondary-50 px-3 py-0 sm:py-1">
+                Developpement
+              </span>
+            </span>
+            <span class="ml-2 flex h-fit items-center justify-center rounded-full border border-secondary-50 bg-secondary-50 px-3 py-0 text-secondary-400 sm:py-1" >
+              2024
+            </span>
+          </div>
+          </div>
+
+        </div>
       </div>
 
-      <div class="articleCase">
-        
-        <article class="article">
-          <div class="imgProjet" target="_blank">
-            <img id="image" src="./src/Untitled Project (2).jpg"></img>
-          </div>
-          <div class="articleText">
-            <p>Boutique en ligne</p>
-          </div>
-            
-          <div class="boutonBox">
-            <a class="boutonArticle" href="https://darkviolet-dog-241640.hostingersite.com/" target="_blank">
-              <p class="boutonArticleText">Voir le site</p>
-            </a>
-          </div>
-        </article>
-      
-      </div> 
-    
+    </div>
+
+    <div class="container3">
+
     </div>
 
     <script type="module" src="./src/index.js"></script>
     <script type="module" src="./src/scrolltrigger.js"></script>
+    <script type="module" src="./src/magnetic.js"></script>
+
 
   </div>
 
