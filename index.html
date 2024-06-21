@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./src/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="scripts/jquery.waypoints.min.js"></script>
-  <script type="module" src="./src/cursor.js"></script>
+  <script type="module" src="./src/cursor2.js"></script>
   <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
   <script>
     const lenis = new Lenis({
@@ -43,14 +43,15 @@
               }
             }
           </script>
+
 </head>
 
 
 
 <body>
+
   <div id="main">
     <div class="circle"></div>
-    <div class="circleView"></div>
     <div class="container">
       <nav>
         <div class="logo">
@@ -109,25 +110,26 @@
           <div class="imgProjet" target="_blank">
             <img id="image" src="./img/adidas.webp"></img>
             <div class="flex flex-col gap-y-1">
-            </br>
-            <h3 class="w-fit text-h5 font-semibold text-accent-300 md:text-h4 2xl:text-h3">
-              Padidas
-            </h3>
-          </div>
-          </br>
-          <div class="flex items-end text-sm font-medium uppercase tracking-base text-secondary-50 2xl:text-base" >
-            <span class="flex h-fit items-center justify-center gap-x-2" >
-              <span class="rounded-full border border-secondary-50 px-3 py-0 sm:py-1">
+              </br>
+              <h3 class="w-fit text-h5 font-semibold text-accent-300 md:text-h4 2xl:text-h3">
                 Padidas
+              </h3>
+            </div>
+            </br>
+            <div class="flex items-end text-sm font-medium uppercase tracking-base text-secondary-50 2xl:text-base">
+              <span class="flex h-fit items-center justify-center gap-x-2">
+                <span class="rounded-full border border-secondary-50 px-3 py-0 sm:py-1">
+                  Padidas
+                </span>
+                <span class="rounded-full border border-secondary-50 px-3 py-0 sm:py-1">
+                  Developpement
+                </span>
               </span>
-              <span class="rounded-full border border-secondary-50 px-3 py-0 sm:py-1">
-                Developpement
+              <span
+                class="ml-2 flex h-fit items-center justify-center rounded-full border border-secondary-50 bg-secondary-50 px-3 py-0 text-secondary-400 sm:py-1">
+                2024
               </span>
-            </span>
-            <span class="ml-2 flex h-fit items-center justify-center rounded-full border border-secondary-50 bg-secondary-50 px-3 py-0 text-secondary-400 sm:py-1" >
-              2024
-            </span>
-          </div>
+            </div>
           </div>
           <div class="imgBasket">
             <img id="image" src="./img/basketball.webp"></img>
@@ -138,8 +140,8 @@
               </h3>
             </div>
             </br>
-            <div class="flex items-end text-sm font-medium uppercase tracking-base text-secondary-50 2xl:text-base" >
-              <span class="flex h-fit items-center justify-center gap-x-2" >
+            <div class="flex items-end text-sm font-medium uppercase tracking-base text-secondary-50 2xl:text-base">
+              <span class="flex h-fit items-center justify-center gap-x-2">
                 <span class="rounded-full border border-secondary-50 px-3 py-0 sm:py-1">
                   Basket
                 </span>
@@ -147,7 +149,8 @@
                   Developpement
                 </span>
               </span>
-              <span class="ml-2 flex h-fit items-center justify-center rounded-full border border-secondary-50 bg-secondary-50 px-3 py-0 text-secondary-400 sm:py-1" >
+              <span
+                class="ml-2 flex h-fit items-center justify-center rounded-full border border-secondary-50 bg-secondary-50 px-3 py-0 text-secondary-400 sm:py-1">
                 2024
               </span>
             </div>
@@ -155,25 +158,26 @@
           <div class="imgFootball" style="padding-bottom: 100px;">
             <img id="image" src="./img/football.webp"></img>
             <div class="flex flex-col gap-y-1">
+              </br>
+              <h3 class="w-fit text-h5 font-semibold text-accent-300 md:text-h4 2xl:text-h3">
+                FootClub
+              </h3>
+            </div>
             </br>
-            <h3 class="w-fit text-h5 font-semibold text-accent-300 md:text-h4 2xl:text-h3">
-              FootClub
-            </h3>
-          </div>
-          </br>
-          <div class="flex items-end text-sm font-medium uppercase tracking-base text-secondary-50 2xl:text-base" >
-            <span class="flex h-fit items-center justify-center gap-x-2" >
-              <span class="rounded-full border border-secondary-50 px-3 py-0 sm:py-1">
-                Foot
+            <div class="flex items-end text-sm font-medium uppercase tracking-base text-secondary-50 2xl:text-base">
+              <span class="flex h-fit items-center justify-center gap-x-2">
+                <span class="rounded-full border border-secondary-50 px-3 py-0 sm:py-1">
+                  Foot
+                </span>
+                <span class="rounded-full border border-secondary-50 px-3 py-0 sm:py-1">
+                  Developpement
+                </span>
               </span>
-              <span class="rounded-full border border-secondary-50 px-3 py-0 sm:py-1">
-                Developpement
+              <span
+                class="ml-2 flex h-fit items-center justify-center rounded-full border border-secondary-50 bg-secondary-50 px-3 py-0 text-secondary-400 sm:py-1">
+                2024
               </span>
-            </span>
-            <span class="ml-2 flex h-fit items-center justify-center rounded-full border border-secondary-50 bg-secondary-50 px-3 py-0 text-secondary-400 sm:py-1" >
-              2024
-            </span>
-          </div>
+            </div>
           </div>
 
         </div>
@@ -182,7 +186,26 @@
     </div>
 
     <div class="container3">
-
+      <!-- <div class="blob">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#BFBFB1" transform="translate(100 100)">
+            <animate attributeName="d" 
+              dur="10000ms" 
+              repeatCount="indefinite"
+              values="M52.5,-13.7C60.1,6.3,52.8,34.5,34.5,47.9C16.2,61.3,-13.2,59.9,-33.3,45.4C-53.5,30.9,-64.5,3.2,-57.4,-16.1C-50.3,-35.4,-25.2,-46.4,-1.4,-45.9C22.5,-45.5,44.9,-33.7,52.5,-13.7Z; 
+              M41.9,-26.6C57.7,-13.6,76.3,4,73.5,17C70.7,29.9,46.5,38.2,25.3,45.9C4.1,53.6,-14.3,60.7,-31.8,56.1C-49.2,51.4,-65.8,35.1,-67.8,18C-69.7,0.8,-56.9,-17.2,-43.2,-29.7C-29.5,-42.2,-14.7,-49.2,-0.8,-48.5C13.1,-47.8,26.1,-39.6,41.9,-26.6Z">
+            </animate>
+          </path>
+        </svg>
+      </div> -->
+      <div class="signature">
+        <h1>
+          © 2024
+          </br>
+          PASCAL
+          DZAMA
+        </h1>
+      </div>
     </div>
 
     <script type="module" src="./src/index.js"></script>

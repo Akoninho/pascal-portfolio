@@ -23,8 +23,8 @@ const tl = gsap.timeline( {
   
 });
 
-tl.from('.canvas', {opacity: 0, y: "6rem", duration: 1 });
-tl.gsap.from("#main", {opacity: 0, scale: 0.8, duration: 2});
+// gsap.from('.canvas', {opacity: 0, y: "6rem", duration: 1 });
+// gsap.from("#main", {opacity: 0, scale: 0.8, duration: 2});
   // gsap.from('.canvas', {opacity: 0, y: "6rem", duration: 1 });
   // gsap.from("#main", {opacity: 0, scale: 0.8, duration: 2});
 
@@ -83,22 +83,22 @@ tl.gsap.from("#main", {opacity: 0, scale: 0.8, duration: 2});
 //   }
 // };
 
-gsap.utils.toArray(".container").forEach((container, i) => {
-  ScrollTrigger.create({
-    trigger: container,
-    start: "top top",
-    pin: true,
-    pinSpacing: false,
-    // snap: 1,
-  });
-  gsap.from(container.children, {
-    y: 50,
-    opacity: 0,
-    scrollTrigger: {
-      trigger: container,
-      start: "top center",
-      end: "top top",
-      toggleActions: "play none reverse reset",
-    },
-  });
-});
+// gsap.utils.toArray(".container").forEach((container, i) => {
+//   ScrollTrigger.create({
+//     trigger: container,
+//     start: "top top",
+//     pin: true,
+//     pinSpacing: false,
+//     // snap: 1,
+//   });
+//   gsap.from(container.children, {
+//     y: 50,
+//     opacity: 0,
+//     scrollTrigger: {
+//       trigger: container,
+//       start: "top center",
+//       end: "top top",
+//       toggleActions: "play none reverse reset",
+//     },
+//   });
+// });
