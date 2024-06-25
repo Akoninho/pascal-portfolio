@@ -49,14 +49,15 @@
 
 
 <body>
-
+  
   <div id="main">
     <div class="circle"></div>
+    
     <div class="container">
       <nav>
         <div class="logo">
-          <h1>Pascal.</h1>
-          <h5>Portfolio</h5>
+          <h2>Pascal.</h2>
+          <h4>Portfolio</h4>
         </div>
         <ul>
           <a class="link-text group relative block h-fit overflow-hidden font-medium leading-snug"
@@ -70,12 +71,12 @@
               class="link2 ">Contact</span></a>
         </ul>
       </nav>
-
+      <div class="circle3"></div>
       <div class="canvas">
 
         <div class="presentation">
           <div class="statut">
-            <h2>ETUDIANT BTS SIO / WEB DEV</h2>
+            <h3>ETUDIANT BTS SIO / WEB DEV</h3>
           </div>
           <div class="nom">
             <p>PASCAL DZAMA</p><sup class="asterix">(*)</sup>
@@ -92,7 +93,7 @@
 
       <div class="title">
 
-        <h1>MES PROJETS</h1>
+        <h1>MES PROJETS/</h1>
 
       </div>
       <div class="image-slider">
@@ -105,10 +106,18 @@
             </div>
           </div>
         </div>
+
+
+
+
         <div class="droite">
 
-          <div class="imgProjet" target="_blank">
-            <img id="image" src="./img/adidas.webp"></img>
+          <div class="image" target="_blank">
+            <a href="https://darkviolet-dog-241640.hostingersite.com/" target="_blank">
+              <img src="./img/adidas.webp" style="width: 400px; 
+              height: 400px; 
+              box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5), -4px -4px 16px rgba(255, 255, 255, 0.05);"></img>
+            </a>
             <div class="flex flex-col gap-y-1">
               </br>
               <h3 class="w-fit text-h5 font-semibold text-accent-300 md:text-h4 2xl:text-h3">
@@ -131,8 +140,14 @@
               </span>
             </div>
           </div>
-          <div class="imgBasket">
-            <img id="image" src="./img/basketball.webp"></img>
+          <div class="image" target="_blank">
+            <a href="https://sio.jbdelasalle.com/~pdzama/basketclub/?page=matchs" target="_blank">
+              <img src="./img/basketball.webp" style="position: relative;
+              width: 400px; 
+              height: 400px; 
+              left: 30px;
+              box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5), -4px -4px 16px rgba(255, 255, 255, 0.05);"></img>
+            </a>
             <div class="flex flex-col gap-y-1">
               </br>
               <h3 class="w-fit text-h5 font-semibold text-accent-300 md:text-h4 2xl:text-h3">
@@ -155,8 +170,12 @@
               </span>
             </div>
           </div>
-          <div class="imgFootball" style="padding-bottom: 100px;">
-            <img id="image" src="./img/football.webp"></img>
+          <div class="image">
+            <a href="https://sio.jbdelasalle.com/~pdzama/totowar/" target="_blank">
+              <img src="./img/football.webp" style="width: 400px; 
+              height: 400px;
+              box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5), -4px -4px -16px rgba(255, 255, 255, 0.05);"></img>
+            </a>
             <div class="flex flex-col gap-y-1">
               </br>
               <h3 class="w-fit text-h5 font-semibold text-accent-300 md:text-h4 2xl:text-h3">
@@ -164,7 +183,8 @@
               </h3>
             </div>
             </br>
-            <div class="flex items-end text-sm font-medium uppercase tracking-base text-secondary-50 2xl:text-base">
+            <div class="flex items-end text-sm font-medium uppercase tracking-base text-secondary-50 2xl:text-base"
+              style="padding-bottom: 100px;">
               <span class="flex h-fit items-center justify-center gap-x-2">
                 <span class="rounded-full border border-secondary-50 px-3 py-0 sm:py-1">
                   Foot
@@ -186,26 +206,57 @@
     </div>
 
     <div class="container3">
-      <!-- <div class="blob">
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <path fill="#BFBFB1" transform="translate(100 100)">
-            <animate attributeName="d" 
-              dur="10000ms" 
-              repeatCount="indefinite"
-              values="M52.5,-13.7C60.1,6.3,52.8,34.5,34.5,47.9C16.2,61.3,-13.2,59.9,-33.3,45.4C-53.5,30.9,-64.5,3.2,-57.4,-16.1C-50.3,-35.4,-25.2,-46.4,-1.4,-45.9C22.5,-45.5,44.9,-33.7,52.5,-13.7Z; 
-              M41.9,-26.6C57.7,-13.6,76.3,4,73.5,17C70.7,29.9,46.5,38.2,25.3,45.9C4.1,53.6,-14.3,60.7,-31.8,56.1C-49.2,51.4,-65.8,35.1,-67.8,18C-69.7,0.8,-56.9,-17.2,-43.2,-29.7C-29.5,-42.2,-14.7,-49.2,-0.8,-48.5C13.1,-47.8,26.1,-39.6,41.9,-26.6Z">
-            </animate>
-          </path>
-        </svg>
-      </div> -->
-      <div class="signature">
-        <h1>
-          © 2024
-          </br>
-          PASCAL
-          DZAMA
-        </h1>
+      <div class="circle2"></div>
+
+
+      <div class="flex h-fit  w-full justify-end md:col-span-3 lg:col-span-3">
+        <div style="transform: none;">
+          <button aria-label="Scroll to top"
+            class="group relative hidden w-fit flex-col items-center justify-center overflow-hidden rounded-full bg-accent-500 p-10 duration-1000 ease-expo hover:scale-90 md:flex"
+            style="position: relative; top: 5vw; right: 4vw;">
+            <span class="absolute flex transition-all duration-500 ease-in-out-cubic group-hover:-translate-y-20">
+              <img alt loading="lazy" width="34px" height="36px" decoding="async" data-nimg="1"
+                style="color: transparent" src="./img/arrow.3054c3ee.svg">
+            </span>
+            <span
+              class="absolute flex translate-y-20 transition-all duration-500 ease-in-out-cubic group-hover:translate-y-0">
+              <img alt loading="lazy" width="34px" height="36px" decoding="async" data-nimg="1"
+                style="color: transparent" src="./img/arrow.3054c3ee.svg">
+            </span>
+          </button>
+
+        </div>
       </div>
+
+
+      <div class="footer">
+        <div class="signature">
+          <h1>
+            © 2024
+            </br>
+            PASCAL
+            DZAMA
+          </h1>
+        </div>
+  
+  
+        <div class="mail">
+        <!-- <div> -->
+          <a href="mailto:dzamapascal24@gmail.com" target="_blank">
+            <img src="./img/icons8-external-50.png" style="position: relative; right: 2vw; top: 1.5vw;width: 30px; ">
+            <h5>
+              dzamapascal24@gmail.com
+            </h5>
+          </a>
+        </div>
+      </div>
+      <!-- <div class="signature"> -->
+ 
+
+
+
+
+      
     </div>
 
     <script type="module" src="./src/index.js"></script>

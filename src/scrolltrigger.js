@@ -17,7 +17,7 @@ const tl = gsap.timeline( {
   scrollTrigger: {
     trigger: ".canvas",
     scrub: true,
-    markers: true
+    // markers: true
     // toggleActions: "play reverse play reverse"
   }
   
