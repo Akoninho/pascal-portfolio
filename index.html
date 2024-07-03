@@ -6,11 +6,21 @@
   <title>Portfolio</title>
   <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css">
   <link rel="stylesheet" href="./src/d1ce22d90a5a7b82.css">
-  <link rel="stylesheet" href="./src/scroll.scss">
   <link rel="stylesheet" href="./src/style.css">
+  <script type="module" src="./src/loading.js"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@<version>/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@<version>/examples/jsm/",
+        "gsap" : "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+      }
+    }
+  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="scripts/jquery.waypoints.min.js"></script>
   <script type="module" src="./src/cursor2.js"></script>
+  <script src="https://unpkg.com/@barba/core"></script>
   <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
   <script>
     const lenis = new Lenis({
@@ -34,24 +44,23 @@
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.165.0/three.module.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.165.0/three.module.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/three@0.127.0/build/three.min.js"></script> -->
-  <script type="importmap">
-            {
-              "imports": {
-                "three": "https://cdn.jsdelivr.net/npm/three@<version>/build/three.module.js",
-                "three/addons/": "https://cdn.jsdelivr.net/npm/three@<version>/examples/jsm/",
-                "gsap" : "https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
-              }
-            }
-          </script>
+  
 
 </head>
 
 
 
 <body>
-  
+  <div class="loader">
+    <div class="spinner">
+      <svg width="50" height="50" viewBox="0 0 50 50">
+        <circle cx="25" cy="25" r="20" fill="none" stroke-width="5" stroke="#000" />
+      </svg>
+    </div>
+  </div>
   <div id="main">
     <div class="circle"></div>
+    
     
     <div class="container">
       <nav>
@@ -61,17 +70,16 @@
         </div>
         <ul>
           <a class="link-text group relative block h-fit overflow-hidden font-medium leading-snug"
-            href="/#services"><span class="link1">Qui suis-je</span><span aria-hidden="true" class="link2 ">Qui
+            href="/#services"><span class="link1">Qui suis-je</span><span aria-hidden="true" class="link2">Qui
               suis-je</span></a>
           <a class="link-text group relative block h-fit overflow-hidden font-medium leading-snug"
-            href="/#services"><span class="link1">Mes Projets</span><span aria-hidden="true" class="link2 ">Mes
+            href="/#services"><span class="link1">Mes Projets</span><span aria-hidden="true" class="link2">Mes
               Projets</span></a>
           <a class="link-text group relative block h-fit overflow-hidden font-medium leading-snug"
             href="/#services"><span class="link1">Contact</span><span aria-hidden="true"
-              class="link2 ">Contact</span></a>
+              class="link2">Contact</span></a>
         </ul>
       </nav>
-      <div class="circle3"></div>
       <div class="canvas">
 
         <div class="presentation">
@@ -90,6 +98,40 @@
     </div>
 
     <div class="container2">
+      <!-- <button aria-label="Menu Navigation Button" 
+      aria-expanded="false" 
+      aria-controls="menu" 
+      class="group fixed right-6 top-6 z-[999] flex h-16 w-16 flex-col items-center justify-center rounded-full bg-accent-500  transition-all duration-1000 ease-expo hover:scale-90 sm:right-8 sm:top-8 2xl:h-20 2xl:w-20  scale-100">
+          <span class="ease-in-out-circ absolute h-[2px] w-7 rounded-full bg-secondary-400 transition-all duration-300 2xl:w-9  -translate-y-1 rotate-0">
+
+          </span>
+          <span class="ease-in-out-circ absolute h-[2px] w-7 rounded-full bg-secondary-400 transition-all duration-300 2xl:w-9  translate-y-1 rotate-0">
+
+          </span>
+      </button>
+      <div class="pointer-events-none fixed z-50 flex h-screen w-screen justify-end text-accent-200">
+        <div class="pointer-events-auto relative z-20 m-2 flex max-w-lg flex-col justify-end overflow-hidden rounded-md bg-secondary-300  py-10 2xl:max-w-xl 3xl:max-w-3xl"
+        style="width: inherit; opacity: 1;">
+            <div class="flex flex-col items-start justify-start gap-y-4 px-8 sm:gap-y-6 sm:px-14 2xl:px-20">
+              <div class="flex flex-col " style="opacity: 1;">
+                <span class=" text-left font-bold text-secondary-50" >
+                   ADDRESSE EMAIL
+                </span>
+                <a class="link-text group relative block h-fit overflow-hidden font-medium leading-base"
+                href="mailto:dzamapascal24@gmail.com">
+                
+                  <span class="link1">
+                    dzamapascal24@gmail.com
+                  </span>
+                  <span aria-hidden=true class="lin2">
+                    dzamapascal24@gmail.com
+                  </span>
+
+                </a>
+              </div>
+            </div>
+        </div>
+      </div> -->
 
       <div class="title">
 
@@ -131,7 +173,7 @@
                   Padidas
                 </span>
                 <span class="rounded-full border border-secondary-50 px-3 py-0 sm:py-1">
-                  Developpement
+                  Slam
                 </span>
               </span>
               <span
@@ -161,7 +203,7 @@
                   Basket
                 </span>
                 <span class="rounded-full border border-secondary-50 px-3 py-0 sm:py-1">
-                  Developpement
+                  Slam
                 </span>
               </span>
               <span
@@ -190,7 +232,7 @@
                   Foot
                 </span>
                 <span class="rounded-full border border-secondary-50 px-3 py-0 sm:py-1">
-                  Developpement
+                  Slam
                 </span>
               </span>
               <span
@@ -206,21 +248,20 @@
     </div>
 
     <div class="container3">
-      <div class="circle2"></div>
 
 
       <div class="flex h-fit  w-full justify-end md:col-span-3 lg:col-span-3">
         <div style="transform: none;">
           <button aria-label="Scroll to top"
             class="group relative hidden w-fit flex-col items-center justify-center overflow-hidden rounded-full bg-accent-500 p-10 duration-1000 ease-expo hover:scale-90 md:flex"
-            style="position: relative; top: 5vw; right: 4vw;">
+            style="position: relative; top: 34vw; right: 4vw;">
             <span class="absolute flex transition-all duration-500 ease-in-out-cubic group-hover:-translate-y-20">
-              <img alt loading="lazy" width="34px" height="36px" decoding="async" data-nimg="1"
+              <img alt loading="lazy" width="24px" height="26px" decoding="async" data-nimg="1"
                 style="color: transparent" src="./img/arrow.3054c3ee.svg">
             </span>
             <span
               class="absolute flex translate-y-20 transition-all duration-500 ease-in-out-cubic group-hover:translate-y-0">
-              <img alt loading="lazy" width="34px" height="36px" decoding="async" data-nimg="1"
+              <img alt loading="lazy" width="24px" height="26px" decoding="async" data-nimg="1"
                 style="color: transparent" src="./img/arrow.3054c3ee.svg">
             </span>
           </button>
@@ -228,40 +269,112 @@
         </div>
       </div>
 
+      
 
+      <div class="signature" style="font-size: 3rem;">
+        <h2>
+          © 2024
+          </br>
+          PASCAL DZAMA
+        </h2>
+      </div>
       <div class="footer">
-        <div class="signature">
-          <h1>
-            © 2024
-            </br>
-            PASCAL
-            DZAMA
-          </h1>
+
+        
+
+        <div class="navigation-footer">
+          
+          <div class="flex flex-col md:col-span-3 lg:col-span-3" style="position: relative; justify-content: center; right: 2vw;">
+            <span class="link-text mb-3  flex border-b-[1.5px] border-accent-500 pb-1 font-bold  uppercase text-secondary-300">
+              navigation
+            </span>
+            <ul>
+              <a class=" link-text group relative block h-fit w-fit overflow-hidden font-medium leading-base text-secondary-100">
+                <span class="link1">
+                  Qui suis-je
+                </span>
+                <span aria-hidden="true" class="link2 ">
+                  Qui suis-je
+                </span>
+              </a>
+              <a class=" link-text group relative block h-fit w-fit overflow-hidden font-medium leading-base text-secondary-100">
+                <span class="link1">
+                  Mes Projets
+                </span>
+                <span aria-hidden="true" class="link2 ">
+                  Mes Projets
+                </span>
+              </a>
+              <a class=" link-text group relative block h-fit w-fit overflow-hidden font-medium leading-base text-secondary-100">
+                <span class="link1">
+                  Contact
+                </span>
+                <span aria-hidden="true" class="link2 ">
+                  Contact
+                </span>
+              </a>
+            </ul>
+          </div>
+    
         </div>
+        
   
   
-        <div class="mail">
-        <!-- <div> -->
+        <!-- <div class="mail">
           <a href="mailto:dzamapascal24@gmail.com" target="_blank">
             <img src="./img/icons8-external-50.png" style="position: relative; right: 2vw; top: 1.5vw;width: 30px; ">
             <h5>
               dzamapascal24@gmail.com
             </h5>
           </a>
+        </div> -->
+        <div class="mail">
+          
+          <div class="flex flex-col md:col-span-3 lg:col-span-3" style="position: relative; justify-content: center;">
+            
+            <span class="link-text mb-3  flex border-b-[1.5px] border-accent-500 pb-1 font-bold  uppercase text-secondary-300">
+              contact
+            </span>
+            <ul>
+              <a class=" link-text group relative block h-fit w-fit overflow-hidden font-medium leading-base text-secondary-100" href="mailto:dzamapascal24@gmail.com" target="_blank">
+                <span class="linkk">
+                  dzamapascal24@gmail.com
+                </span>
+              </a>
+            </ul>  
+          
+          </div>   
+        
+        </div>
+        <div class="link-text col-span-4 mb-3 flex flex-col gap-x-3 sm:mb-0 md:col-span-3 lg:col-span-3" 
+        style=
+        "position: relative; 
+        justify-content: center;
+        top: 16vw;
+        left: 10vw;">
+          
+          <span class=" font-bold uppercase text-secondary-300">
+            Local Time
+          </span>
+          <span class="time">
+            <script>
+              let time = document.querySelector(".time");
+
+              setInterval(() =>{
+                let d = new Date();
+                time.innerHTML = d.toLocaleTimeString();
+              },1000)
+            </script>
+          </span>
+
         </div>
       </div>
-      <!-- <div class="signature"> -->
- 
-
-
-
-
-      
-    </div>
+    </div>  
 
     <script type="module" src="./src/index.js"></script>
     <script type="module" src="./src/scrolltrigger.js"></script>
     <script type="module" src="./src/magnetic.js"></script>
+    <script type="module" src="./src/time.js"></script>
 
 
   </div>

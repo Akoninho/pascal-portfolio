@@ -12,21 +12,13 @@ import { TextPlugin } from "gsap/TextPlugin";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-const tl = gsap.timeline( { 
+const tl = gsap.timeline();
    
-  scrollTrigger: {
-    trigger: ".canvas",
-    scrub: true,
-    // markers: true
-    // toggleActions: "play reverse play reverse"
-  }
-  
-});
+// tl.from(".h2", 1.8, {y: 100,ease: "power4.out",delay: 1,skewY: 7,stagger: {amount: 0.3}, duration: 1});
 
-// gsap.from('.canvas', {opacity: 0, y: "6rem", duration: 1 });
+// gsap.from('h2', {opacity: 0, y: "6rem", duration: 1 });
 // gsap.from("#main", {opacity: 0, scale: 0.8, duration: 2});
-  // gsap.from('.canvas', {opacity: 0, y: "6rem", duration: 1 });
-  // gsap.from("#main", {opacity: 0, scale: 0.8, duration: 2});
+
 
   
 
