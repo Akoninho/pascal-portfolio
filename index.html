@@ -44,42 +44,75 @@
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.165.0/three.module.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.165.0/three.module.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/three@0.127.0/build/three.min.js"></script> -->
-  
+
 
 </head>
 
 
 
 <body>
-  <div class="loader">
+  <!-- <div class="loader">
     <div class="spinner">
       <svg width="50" height="50" viewBox="0 0 50 50">
         <circle cx="25" cy="25" r="20" fill="none" stroke-width="5" stroke="#000" />
       </svg>
     </div>
-  </div>
+  </div> -->
   <div id="main">
     <div class="circle"></div>
-    
-    
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="logo nav-brand" style="margin-left: 2vw;">
+        <h2>Pascal.</h2>
+        <h4>Portfolio</h4>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse nav-flex" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="link-text group relative block h-fit overflow-hidden font-medium leading-snug"
+              href="/#services"><span class="link1">Qui suis-je</span><span aria-hidden="true" class="link2">Qui
+                suis-je</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="link-text group relative block h-fit overflow-hidden font-medium leading-snug"
+              href="/#services"><span class="link1">Mes Projets</span><span aria-hidden="true" class="link2">Mes
+                Projets</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="link-text group relative block h-fit overflow-hidden font-medium leading-snug"
+              href="/#services"><span class="link1">Contact</span><span aria-hidden="true"
+                class="link2">Contact</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <div class="container">
-      <nav>
+      <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="logo">
           <h2>Pascal.</h2>
           <h4>Portfolio</h4>
         </div>
-        <ul>
-          <a class="link-text group relative block h-fit overflow-hidden font-medium leading-snug"
-            href="/#services"><span class="link1">Qui suis-je</span><span aria-hidden="true" class="link2">Qui
-              suis-je</span></a>
-          <a class="link-text group relative block h-fit overflow-hidden font-medium leading-snug"
-            href="/#services"><span class="link1">Mes Projets</span><span aria-hidden="true" class="link2">Mes
-              Projets</span></a>
-          <a class="link-text group relative block h-fit overflow-hidden font-medium leading-snug"
-            href="/#services"><span class="link1">Contact</span><span aria-hidden="true"
-              class="link2">Contact</span></a>
-        </ul>
-      </nav>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul>
+            <a class="link-text group relative block h-fit overflow-hidden font-medium leading-snug"
+              href="/#services"><span class="link1">Qui suis-je</span><span aria-hidden="true" class="link2">Qui
+                suis-je</span></a>
+            <a class="link-text group relative block h-fit overflow-hidden font-medium leading-snug"
+              href="/#services"><span class="link1">Mes Projets</span><span aria-hidden="true" class="link2">Mes
+                Projets</span></a>
+            <a class="link-text group relative block h-fit overflow-hidden font-medium leading-snug"
+              href="/#services"><span class="link1">Contact</span><span aria-hidden="true"
+                class="link2">Contact</span></a>
+          </ul>
+        </div>
+
+      </nav> -->
+
       <div class="canvas">
 
         <div class="presentation">
@@ -187,7 +220,6 @@
               <img src="./img/basketball.webp" style="position: relative;
               width: 400px; 
               height: 400px; 
-              left: 30px;
               box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.5), -4px -4px 16px rgba(255, 255, 255, 0.05);"></img>
             </a>
             <div class="flex flex-col gap-y-1">
@@ -269,7 +301,7 @@
         </div>
       </div>
 
-      
+
 
       <div class="signature" style="font-size: 3rem;">
         <h2>
@@ -280,16 +312,19 @@
       </div>
       <div class="footer">
 
-        
+
 
         <div class="navigation-footer">
-          
-          <div class="flex flex-col md:col-span-3 lg:col-span-3" style="position: relative; justify-content: center; right: 2vw;">
-            <span class="link-text mb-3  flex border-b-[1.5px] border-accent-500 pb-1 font-bold  uppercase text-secondary-300">
+
+          <div class="flex flex-col md:col-span-3 lg:col-span-3"
+            style="position: relative; justify-content: center; right: 2vw;">
+            <span
+              class="link-text mb-3  flex border-b-[1.5px] border-accent-500 pb-1 font-bold  uppercase text-secondary-300">
               navigation
             </span>
             <ul>
-              <a class=" link-text group relative block h-fit w-fit overflow-hidden font-medium leading-base text-secondary-100">
+              <a
+                class=" link-text group relative block h-fit w-fit overflow-hidden font-medium leading-base text-secondary-100">
                 <span class="link1">
                   Qui suis-je
                 </span>
@@ -297,7 +332,8 @@
                   Qui suis-je
                 </span>
               </a>
-              <a class=" link-text group relative block h-fit w-fit overflow-hidden font-medium leading-base text-secondary-100">
+              <a
+                class=" link-text group relative block h-fit w-fit overflow-hidden font-medium leading-base text-secondary-100">
                 <span class="link1">
                   Mes Projets
                 </span>
@@ -305,7 +341,8 @@
                   Mes Projets
                 </span>
               </a>
-              <a class=" link-text group relative block h-fit w-fit overflow-hidden font-medium leading-base text-secondary-100">
+              <a
+                class=" link-text group relative block h-fit w-fit overflow-hidden font-medium leading-base text-secondary-100">
                 <span class="link1">
                   Contact
                 </span>
@@ -315,11 +352,11 @@
               </a>
             </ul>
           </div>
-    
+
         </div>
-        
-  
-  
+
+
+
         <!-- <div class="mail">
           <a href="mailto:dzamapascal24@gmail.com" target="_blank">
             <img src="./img/icons8-external-50.png" style="position: relative; right: 2vw; top: 1.5vw;width: 30px; ">
@@ -329,30 +366,30 @@
           </a>
         </div> -->
         <div class="mail">
-          
+
           <div class="flex flex-col md:col-span-3 lg:col-span-3" style="position: relative; justify-content: center;">
-            
-            <span class="link-text mb-3  flex border-b-[1.5px] border-accent-500 pb-1 font-bold  uppercase text-secondary-300">
+
+            <span
+              class="link-text mb-3  flex border-b-[1.5px] border-accent-500 pb-1 font-bold  uppercase text-secondary-300">
               contact
             </span>
             <ul>
-              <a class=" link-text group relative block h-fit w-fit overflow-hidden font-medium leading-base text-secondary-100" href="mailto:dzamapascal24@gmail.com" target="_blank">
+              <a class=" link-text group relative block h-fit w-fit overflow-hidden font-medium leading-base text-secondary-100"
+                href="mailto:dzamapascal24@gmail.com" target="_blank">
                 <span class="linkk">
                   dzamapascal24@gmail.com
                 </span>
               </a>
-            </ul>  
-          
-          </div>   
-        
+            </ul>
+
+          </div>
+
         </div>
-        <div class="link-text col-span-4 mb-3 flex flex-col gap-x-3 sm:mb-0 md:col-span-3 lg:col-span-3" 
-        style=
-        "position: relative; 
+        <div class="link-text col-span-4 mb-3 flex flex-col gap-x-3 sm:mb-0 md:col-span-3 lg:col-span-3" style="position: relative; 
         justify-content: center;
         top: 16vw;
         left: 10vw;">
-          
+
           <span class=" font-bold uppercase text-secondary-300">
             Local Time
           </span>
@@ -360,16 +397,16 @@
             <script>
               let time = document.querySelector(".time");
 
-              setInterval(() =>{
+              setInterval(() => {
                 let d = new Date();
                 time.innerHTML = d.toLocaleTimeString();
-              },1000)
+              }, 1000)
             </script>
           </span>
 
         </div>
       </div>
-    </div>  
+    </div>
 
     <script type="module" src="./src/index.js"></script>
     <script type="module" src="./src/scrolltrigger.js"></script>
