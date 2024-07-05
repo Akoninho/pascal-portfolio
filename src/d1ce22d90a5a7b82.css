@@ -643,14 +643,14 @@ textarea:focus {
 }
 
 .link1 {
-	/* display:flex; */
-	/* transition-property:all; */
-	/* transition-duration:.8s; */
-	/* transition-timing-function:cubic-bezier(.16,1,.3,1); */
+	display:flex;
+	transition-property:all;
+	transition-duration:.8s;
+	transition-timing-function:cubic-bezier(.16,1,.3,1);
 }
 
 .group:hover .link1 {
-	--tw-translate-y: -1.75rem
+	--tw-translate-y: -1.75rem;
 }
 
 .group:hover .link1,
